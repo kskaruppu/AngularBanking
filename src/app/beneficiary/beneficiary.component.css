@@ -1,0 +1,9 @@
+.card-body ul {
+    list-style-type: none;
+    padding-left: 3;
+    cursor: pointer;
+}
+.card-body li{
+    margin: 10px;
+    cursor: pointer;
+}

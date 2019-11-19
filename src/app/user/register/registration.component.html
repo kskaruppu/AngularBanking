@@ -1,0 +1,33 @@
+<div>
+    <!-- <app-messages></app-messages> -->
+    <form [formGroup]="registerForm">
+        <div class="form-group">
+            <label for="fname">First name</label>
+            <input type="text" class="form-control" placeholder="Enter First name" name="fname" id="uname"
+                formControlName="fname" [ngClass]="{'alert':fname.invalid && (fname.dirty || fname.touched),
+                'alert-danger':fname.invalid && (fname.dirty || fname.touched)}">
+            <div class="form-control" *ngIf="registerForm.controls.fname.invalid && registerForm.controls.fname.dirty">
+                Field is invalid
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" name="lname" id="lastname" placeholder="Enter Last Name"
+                formControlName="lname">
+        </div>
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" class="form-control" name="uname" id="username" placeholder="Enter user Name"
+                formControlName="uname">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password" class="form-control"
+                formControlName="password">
+        </div>
+        <div class="form-group">
+            <button (click)="createUser()" class="btn btn-success">Register</button>
+            <button routerLink="/login" style="margin-left: 10px;" class="btn btn-success">Login</button>
+        </div>
+    </form>
+</div>

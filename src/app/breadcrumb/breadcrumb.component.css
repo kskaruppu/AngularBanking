@@ -1,0 +1,9 @@
+/* #007bff */
+
+.breadcrumbbox{
+    background-color: blue;
+}
+  
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}

@@ -1,0 +1,36 @@
+.btnflex{
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.routerMargin{
+    margin-top: 10px;
+}
+
+.headerleftMargin{
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+.activatePackage {
+    color:white;
+    background-color: #68CF17;
+    margin-top: 5px; 
+    margin-right: 0px; 
+    font-size: 12px;
+    border-radius: 20;
+    height: 40;
+    }
+    
+    .deactivatePackage {
+    border-width:1px;
+    border-color: #ED2830;
+    color:#ED2830;
+    background-color: white;
+    margin-top: 5px; 
+    margin-right: 0px; 
+    font-size: 12px;
+    border-radius: 20;
+    height: 40; 
+    }
+    

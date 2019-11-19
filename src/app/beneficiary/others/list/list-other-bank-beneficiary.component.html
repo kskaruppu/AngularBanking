@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Account Number</th>
+            <th scope="col">Bank</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Ifsc</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of beneficiaryList; let i= index" (click)="selectedItem(item.name)"
+            [ngClass]="item.name === activeElement ? 'active' : 'none'">
+            <th>{{i + 1}}</th>
+            <td>{{item.name}}</td>
+            <td>{{item.accountNumber}}</td>
+            <td>{{item.bank}}</td>
+            <td>{{item.branch}}</td>
+            <td>{{item.ifsc}}</td>
+        </tr>
+    </tbody>
+
+</table>

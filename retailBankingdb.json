@@ -1,0 +1,126 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "id": 1,
+    "FirstName": "Karuppusamy",
+    "LastName": "Marimuthu",
+    "Addresss": "Pooncholoai",
+    "City": "Coimbatore",
+    "State": "Tamilnadu",
+    "Zip": "600001",
+    "Country": "India",
+    "DateOfBirth": "10-May-1980",
+    "PanNo": "COYUI2938Q",
+    "AADHAARNo": "231090129833",
+    "EmailID": "m.karuppusamy@servion.com",
+    "PhoneNo": "289122",
+    "MobileNo": "9090128933"
+  },
+  "accountBasic": [
+    {
+      "CIFNo": "8992341793",
+      "AccNo": "36882727109",
+      "Name": "Mr.Karuppusamy Marimuthu",
+      "Branch": "Pulankinar",
+      "AccountType": "Savings Acount"
+    }
+  ],
+  "beneficiary": [
+    {
+      "id": 4,
+      "name": "Demandy1",
+      "accountNumber": "907511074",
+      "confirmAccNumber": "907511074",
+      "addressone": "No.50,Raja street",
+      "addresstwo": "Chennai",
+      "addressthree": "600058",
+      "transferlimit": "10000",
+      "bank": "Corporation Bank",
+      "branch": "Tirruppur",
+      "ifsc": "CBIN0002",
+      "beneficiaryType": "Others"
+    },
+    {
+      "id": 5,
+      "name": "SaravanaVelu",
+      "accountNumber": "201209121",
+      "confirmAccNumber": "201209121",
+      "addressone": "7/1,senthamarai street",
+      "addresstwo": "Madurai",
+      "addressthree": "643211",
+      "transferlimit": "500000",
+      "bank": "Canara Bank",
+      "branch": "Udumalpet",
+      "ifsc": "CABIN00023",
+      "beneficiaryType": "Others"
+    },
+    {
+      "id": 6,
+      "name": "Balan A",
+      "accountNumber": "4005150004",
+      "confirmAccNumber": "4005150004",
+      "addressone": "No.4",
+      "addresstwo": "Pollachi",
+      "addressthree": "642132",
+      "transferlimit": "500000",
+      "bank": "Canara Bank",
+      "branch": "Pollachi",
+      "ifsc": "CABIN00024",
+      "beneficiaryType": "Others"
+    },
+    {
+      "id": 7,
+      "name": "Balakrishnan",
+      "accountNumber": "368833333",
+      "confirmAccNumber": "368833333",
+      "addressone": "110,Besant nagar",
+      "addresstwo": "Chennai",
+      "addressthree": "600002",
+      "transferlimit": "5000000",
+      "bank": "Karur Vysya Bank",
+      "branch": "Coimbatore",
+      "ifsc": "KVBIN0002",
+      "beneficiaryType": "Others"
+    }
+  ],
+  "ProfilePassword": [
+    {
+      "id": 1,
+      "HintQuestion": "Who is your favourite author?",
+      "HintAnswer": "Manian"
+    },
+    {
+      "HintQuestion": "What is your favourite food?",
+      "HintAnswer": "Manian",
+      "id": 2
+    },
+    {
+      "HintQuestion": "What is your favourite food?",
+      "HintAnswer": "Manian",
+      "id": 3
+    },
+    {
+      "HintQuestion": "Who is your favourite author?",
+      "HintAnswer": "Manian",
+      "id": 4
+    },
+    {
+      "HintQuestion": "Who is your favourite author?",
+      "HintAnswer": "Manian",
+      "id": 5
+    }
+  ]
+}

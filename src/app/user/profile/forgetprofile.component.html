@@ -1,0 +1,30 @@
+<app-messages></app-messages>
+<form [formGroup]="hintGroup" (ngSubmit)="onSubmit()">
+    <div class="card-header cardhead">
+        Forget Profile Password
+    </div>
+    <div class="card-body">
+        <div class="form-group row">
+            <label for="question" class="col-md-4">Hint Question<span class="fNormalrisk">*</span></label>
+            <div class="col-md-5">
+                <select class="form-control form-control-sm" id="question" formControlName="hintquestion">
+                    <option value="">- Select -</option>
+                    <option *ngFor="let quest of questions" [value]="quest">{{quest}}</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="answer" class="col-md-4">Hint Answer<span class="fNormalrisk">*</span></label>
+            <div class="col-md-5">
+                <input type="text" class="form-control form-control-sm" id="answer" formControlName="hintanswer">
+            </div>
+        </div>
+
+        <div class="outer" style="width:100%">
+            <div class="inner"><input type="submit" class="btn btn-primary" value="Submit"></div>
+            <div class="inner"><input type="button" class="btn btn-primary" value="Reset" (click)="clearForms()">
+            </div>
+        </div>
+    </div>
+</form>

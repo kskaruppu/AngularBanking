@@ -1,0 +1,10 @@
+.inner {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 5px;
+  }
+
+ .outer{
+    width:100%;
+    text-align: center;
+  }

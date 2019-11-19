@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.fontsmall{
+    font-size: 13px;
+    color: blue;
+}
+.fontPrimaryNormal{
+    font-size: 15px;
+    color: blue;
+}
+.cursorpoint{
+    cursor: pointer;
+}
+
+.fSmallasterisk{
+    font-size: 10px;
+    color: red;
+}
+
+.fNormalrisk{
+    color: red;
+}
+
+.marginthirty{
+    margin: 30px;
+}
+
+.marginten{
+    margin: 10px;
+}
+
+.breadheader{
+    background: blue;
+    color: white;
+}
+
+.cardhead{
+    background: #e1eef2;
+    color: blue;
+}
+.paymentsgrouphead{
+    background: lightskyblue;
+    width: 200px;
+    height: 45px;
+    border-radius: 0px 50px 30px 5px;
+    color: white;
+}
+
+.benecrudborder {
+    margin-top: 5px;
+    border-bottom: 1px ridge lightgray;
+}
+

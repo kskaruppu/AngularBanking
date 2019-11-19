@@ -1,0 +1,19 @@
+<nav class="nav">
+  <a class="nav-link active" routerLink="/acc">My Accounts</a>
+  <a routerLink="/profile" class="nav-link active">Profile</a>
+  <a class="nav-link" href="/paymenttransferlanding.htm">Fund Transfer</a>
+  <a class="nav-link" routerLink="/beneficiary">Benificiary Maintanence</a>
+  <a class="nav-link" routerLink="./per">Contact</a>
+  <a class="nav-link" routerLink="./bene">Summary</a>
+  <a class="nav-link" routerLink="./navig">Login</a>
+  <a class="nav-link" routerLink="./profile">Login</a>
+</nav>
+
+<div class="row">
+  <div class="col-md-7 offset-md-2">
+    <app-breadcrumb></app-breadcrumb>
+  </div>
+  <div class="col-md-7 offset-md-2">
+    <router-outlet></router-outlet>
+  </div>
+</div>

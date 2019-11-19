@@ -1,0 +1,7 @@
+<ol class="breadcrumb breadcrumbbox">
+    <a style="color: white;">You are here:</a>
+    <li  class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs" style="padding-left: 3px;">
+        <a style="color: white;" [routerLink]="[breadcrumb.url, breadcrumb.params]">{{ breadcrumb.label }}</a>
+    </li>
+
+</ol>

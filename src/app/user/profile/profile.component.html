@@ -1,0 +1,31 @@
+<div class="card marginten">
+    <div class="card-header cardhead">
+        {{divTitle}}Profile Password
+    </div>
+    <div class="card-body">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="form-group row">
+                <label for="profilepassword" class="col-md-4">Profile Password <span
+                        class="fNormalrisk">*</span></label>
+                <div class="col-md-5" [ngClass]="{
+            'has-danger': profilePassword.invalid && (profilePassword.dirty || profilePassword.touched),
+            'has-success': profilePassword.valid && (profilePassword.dirty || profilePassword.touched)
+          }">
+                    <input type="text" class="form-control form-control-sm" id="profilepassword"
+                        formControlName="profilePassword">
+                </div>
+            </div>
+            <div>
+                <label routerLink="/forgetprofile"
+                    class="fontPrimaryNormal underlineLinkdecoration">Forget Profile Password</label>
+            </div>
+            <div>
+                <label>How to set/reset the profile password?</label>
+            </div>
+            <div class="outer">
+                <div class="inner"><input type="submit" class="btn btn-primary" value="Submit"></div>
+                <div class="inner"><input type="button" class="btn btn-primary" value="Clear" (click)="clear()"></div>
+            </div>
+        </form>
+    </div>
+</div>

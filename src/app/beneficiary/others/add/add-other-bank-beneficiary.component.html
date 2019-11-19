@@ -1,0 +1,47 @@
+<div class="container">
+    <form (ngSubmit)="addBeneficiary()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name"
+                [(ngModel)]="beneficiaryRecord.name" #name="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="accountNumber">Account Number</label>
+            <input type="text" class="form-control" id="accountNumber" name="accountNumber"
+                placeholder="Enter Account Number" [(ngModel)]="beneficiaryRecord.accountNumber"
+                #accountNumber="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="confirmAccNumber">Confirm Account Number</label>
+            <input type="text" class="form-control" id="confirmAccNumber" name="confirmAccNumber"
+                placeholder="Enter Account Number" [(ngModel)]="beneficiaryRecord.confirmAccountNumber"
+                #confirmAccNumber="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="addressone">Address 1</label>
+            <input type="text" class="form-control" id="addressone" name="addressone" placeholder="Door No Street Name"
+                [(ngModel)]="beneficiaryRecord.addressone" #addressone="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="addresstwo">Address 2</label>
+            <input type="text" class="form-control" id="addresstwo" name="addresstwo" placeholder="Locality City"
+                [(ngModel)]="beneficiaryRecord.addresstwo" #addresstwo="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="addressthree">Address 3</label>
+            <input type="text" class="form-control" id="addressthree" name="addressthree" placeholder="State Pin Code"
+                [(ngModel)]="beneficiaryRecord.addressthree" #addressthree="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="transferlimit">Transfer Limit</label>
+            <input type="text" class="form-control" id="transferlimit" name="transferlimit"
+                placeholder="Max 10,00,000.00" [(ngModel)]="beneficiaryRecord.transferlimit" #transferlimit="ngModel">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="termsCheck">
+            <label class="form-check-label" for="termsCheck">i accept the Terms and Condition </label>
+        </div>
+        <button type="submit" class="btn btn-primary btnflex">Submit</button>
+    </form>
+
+</div>
